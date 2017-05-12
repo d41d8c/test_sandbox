@@ -16,5 +16,6 @@ def fibonachi(n=5):
         return inner(1, 1, n - 3)
 
 if __name__ == '__main__': # pragma no cover
-    import os, unittest
-    tests = unittest.TestLoader().discover('.')
+    # import os, unittest
+    # tests = unittest.TestLoader().discover('.')
+	print('fibonachi of 23 is {}'.format(fibonachi(23))
