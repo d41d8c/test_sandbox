@@ -18,4 +18,4 @@ def fibonachi(n=5):
 if __name__ == '__main__': # pragma no cover
     # import os, unittest
     # tests = unittest.TestLoader().discover('.')
-	print('fibonachi of 23 is {}'.format(fibonachi(23))
+	print('fibonachi of 23 is {}'.format(fibonachi(23)))
