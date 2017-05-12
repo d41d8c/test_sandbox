@@ -16,17 +16,5 @@ def fibonachi(n=5):
         return inner(1, 1, n - 3)
 
 if __name__ == '__main__': # pragma no cover
-    import coverage, os, unittest
-
-    cov = coverage.coverage(branch=True,omit='__init__')
-    cov.start()
+    import os, unittest
     tests = unittest.TestLoader().discover('.')
-    unittest.TextTestRunner(verbosity=2).run(tests)
-    cov.stop()
-    cov.save()
-    print "Coverage Summary:"
-    cov.report()
-    basedir = os.path.abspath(os.path.dirname(__file__))
-    covdir = os.path.join(basedir, 'coverage')
-    cov.html_report(directory=covdir)
-    cov.erase()
