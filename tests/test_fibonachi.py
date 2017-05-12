@@ -25,7 +25,8 @@ class TestFibonachi(unittest.TestCase):
         #     self.assertTrue(4, 3)
         #     self.assertTrue(5, 5)
 
-
-if __name__ == '__main__': # pragma no cover
-    import os, unittest
-    tests = unittest.TestLoader().discover('.')
+if __name__=="__main__":
+	asd = TestFibonachi()
+	asd.test_fibonachi()
+	asd.test_fibonachi2()
+	
