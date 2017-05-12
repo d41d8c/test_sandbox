@@ -1,7 +1,6 @@
 import unittest
 import fibon
 
-
 class TestFibonachi(unittest.TestCase):
     def test_fibonachi(self):
         self.assertEqual(fibon.fibonachi(8), 21)
@@ -26,7 +25,5 @@ class TestFibonachi(unittest.TestCase):
         #     self.assertTrue(5, 5)
 
 if __name__=="__main__":
-	asd = TestFibonachi()
-	asd.test_fibonachi()
-	asd.test_fibonachi2()
+	unittest.main()
 	
